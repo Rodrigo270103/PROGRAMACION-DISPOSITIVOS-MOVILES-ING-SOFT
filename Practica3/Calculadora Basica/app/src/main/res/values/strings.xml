@@ -15,7 +15,7 @@
     <string name="btn_division">%</string>
     <string name="btn_multiplicacion">x</string>
     <string name="btn_igual">=</string>
-
+    <string name="texto_resultado">Ingrese la operación</string>
 
 
 
