@@ -13,16 +13,22 @@ class MainActivity : AppCompatActivity() {
 
         var musica = MediaPlayer.create(this, R.raw.pista1)
         val btn_reproducir = findViewById<Button>(R.id.btn_reproducir)
-        btn_reproducir.setOnClickListener(){
+        btn_reproducir.setOnClickListener() {
             musica.start()
         }
 
         val btn_pausar = findViewById<Button>(R.id.btn_pausar)
-        btn_pausar.setOnClickListener(){
+        btn_pausar.setOnClickListener() {
             musica.pause()
         }
 
+        val btn_detener = findViewById<Button>(R.id.btn_detener)
+        btn_detener.setOnClickListener() {
+            if (musica.isPlaying) {
+                musica.stop()
+                musica.prepare()
+            }
+        }
 
     }
-
 }
