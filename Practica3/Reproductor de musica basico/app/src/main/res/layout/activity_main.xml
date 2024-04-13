@@ -8,33 +8,33 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_reproducir"
         android:layout_width="107dp"
         android:layout_height="116dp"
         android:layout_marginStart="24dp"
-        android:text="Button"
+        android:text="@string/reproducir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_pausar"
         android:layout_width="105dp"
         android:layout_height="109dp"
         android:layout_marginStart="20dp"
-        android:text="Button"
+        android:text="@string/pausar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/btn_reproducir"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.495" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_detener"
         android:layout_width="102dp"
         android:layout_height="108dp"
-        android:text="Button"
+        android:text="@string/detener"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/btn_pausar"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
