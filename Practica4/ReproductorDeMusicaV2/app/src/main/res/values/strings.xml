@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ReproductorDeMusicaV2</string>
+    <string name="reproducir">PLAY</string>
+    <string name="pausar">PAUSE</string>
+    <string name="detener">STOP</string>
+    <string name="siguiente">Siguiente</string>
+</resources>
