@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
+const val KEY_CODE = "clave"
 class MainActivity : AppCompatActivity() {
 
     private lateinit var textView: TextView
@@ -14,11 +15,15 @@ class MainActivity : AppCompatActivity() {
     private var operator = ""
     private var isNewOperation = true
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         textView = findViewById(R.id.texto_resultado)
+        if (savedInstanceState != null) {
+            textView.text = savedInstanceState.getString(KEY_CODE, "")
+        }
     }
 
     fun onButtonClick(view: View) {
@@ -64,5 +69,8 @@ class MainActivity : AppCompatActivity() {
         textView.text = result.toString()
         isNewOperation = true
     }
-    
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putString(KEY_CODE, textView.text.toString())
+        super.onSaveInstanceState(outState)
+    }
 }
