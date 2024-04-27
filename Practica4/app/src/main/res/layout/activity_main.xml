@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:text="@string/siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spn_opciones"
-        tools:layout_editor_absoluteX="153dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_opciones" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

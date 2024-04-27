@@ -11,7 +11,7 @@
         android:id="@+id/btn_imagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/imagen"
+        android:src="@drawable/imagen4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,6 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/volver"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="550dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_imagen" />
 </androidx.constraintlayout.widget.ConstraintLayout>

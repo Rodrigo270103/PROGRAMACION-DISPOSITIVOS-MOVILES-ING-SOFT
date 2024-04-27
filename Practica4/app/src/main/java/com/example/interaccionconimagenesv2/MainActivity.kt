@@ -1,5 +1,6 @@
 package com.example.interaccionconimagenesv2
 
+import android.app.Activity
 import android.content.Intent
 import android.media.Image
 import android.os.Bundle
@@ -37,5 +38,18 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent, REQUEST_CODE)
         }
 
+    }
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == Activity.RESULT_OK) {
+                // Recuperamos la posicion del seleccionado antes de cambiar de actividad
+                val seleccionado = data?.getIntExtra(KEY_SELECT, 0).toString().toInt()
+                val spinner = findViewById<Spinner>(R.id.spn_opciones)
+                spinner.setSelection(seleccionado)
+
+            }
+        }
     }
 }
