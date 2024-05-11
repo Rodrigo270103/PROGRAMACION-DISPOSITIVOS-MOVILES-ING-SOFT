@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gameLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:contentDescription="Game Logo"
+        android:src="@drawable/game_logo" />
+
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="¡Bienvenido al Juego de Preguntas y Respuestas!"
+        android:textSize="24sp"/>
+
+
+    <TextView
+        android:id="@+id/themeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Tema: Desafío de Conocimiento"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/questionCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/themeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Número de preguntas: 10"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionCountText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Duración: 3 minutos"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/durationText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Jugar"
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>
