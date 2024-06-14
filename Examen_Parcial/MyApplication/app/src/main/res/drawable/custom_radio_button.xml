@@ -1,8 +1,0 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Estado cuando el botón está seleccionado -->
-    <item android:drawable="@color/radio_button_correct_color" android:state_checked="true"/>
-    <!-- Estado cuando la respuesta es incorrecta -->
-    <item android:drawable="@color/radio_button_incorrect_color"/>
-    <!-- Estado predeterminado -->
-    <item android:drawable="@android:color/transparent"/>
-</selector>
