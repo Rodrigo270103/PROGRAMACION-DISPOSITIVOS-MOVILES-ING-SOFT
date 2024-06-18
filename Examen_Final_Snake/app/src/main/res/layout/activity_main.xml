@@ -75,7 +75,20 @@
 
         </Button>
 
+        <RelativeLayout
+            android:id="@+id/board"
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            tools:ignore="MissingConstraints">
 
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
 
 
 
